@@ -1,0 +1,688 @@
+
+LAB2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         000000dc  00800200  0000036e  000003e2  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000036e  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000004be  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000004f0  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000070  00000000  00000000  00000530  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00001986  00000000  00000000  000005a0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00001485  00000000  00000000  00001f26  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000606  00000000  00000000  000033ab  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000120  00000000  00000000  000039b4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000a20  00000000  00000000  00003ad4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000002b0  00000000  00000000  000044f4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000078  00000000  00000000  000047a4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	99 c0       	rjmp	.+306    	; 0x134 <__ctors_end>
+   2:	00 00       	nop
+   4:	ae c0       	rjmp	.+348    	; 0x162 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	ac c0       	rjmp	.+344    	; 0x162 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	aa c0       	rjmp	.+340    	; 0x162 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	a8 c0       	rjmp	.+336    	; 0x162 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	a6 c0       	rjmp	.+332    	; 0x162 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	a4 c0       	rjmp	.+328    	; 0x162 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	a2 c0       	rjmp	.+324    	; 0x162 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	a0 c0       	rjmp	.+320    	; 0x162 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	9e c0       	rjmp	.+316    	; 0x162 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	9c c0       	rjmp	.+312    	; 0x162 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	9a c0       	rjmp	.+308    	; 0x162 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	98 c0       	rjmp	.+304    	; 0x162 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	96 c0       	rjmp	.+300    	; 0x162 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	94 c0       	rjmp	.+296    	; 0x162 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	92 c0       	rjmp	.+292    	; 0x162 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	90 c0       	rjmp	.+288    	; 0x162 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	8e c0       	rjmp	.+284    	; 0x162 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	8c c0       	rjmp	.+280    	; 0x162 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	8a c0       	rjmp	.+276    	; 0x162 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	88 c0       	rjmp	.+272    	; 0x162 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	86 c0       	rjmp	.+268    	; 0x162 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	84 c0       	rjmp	.+264    	; 0x162 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	82 c0       	rjmp	.+260    	; 0x162 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	80 c0       	rjmp	.+256    	; 0x162 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	7e c0       	rjmp	.+252    	; 0x162 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	7c c0       	rjmp	.+248    	; 0x162 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	7a c0       	rjmp	.+244    	; 0x162 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	78 c0       	rjmp	.+240    	; 0x162 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	76 c0       	rjmp	.+236    	; 0x162 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	74 c0       	rjmp	.+232    	; 0x162 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	72 c0       	rjmp	.+228    	; 0x162 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	70 c0       	rjmp	.+224    	; 0x162 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	6e c0       	rjmp	.+220    	; 0x162 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	6c c0       	rjmp	.+216    	; 0x162 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	6a c0       	rjmp	.+212    	; 0x162 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	b0 c0       	rjmp	.+352    	; 0x1f2 <__vector_36>
+  92:	00 00       	nop
+  94:	66 c0       	rjmp	.+204    	; 0x162 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	64 c0       	rjmp	.+200    	; 0x162 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	62 c0       	rjmp	.+196    	; 0x162 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	60 c0       	rjmp	.+192    	; 0x162 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	5e c0       	rjmp	.+188    	; 0x162 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	5c c0       	rjmp	.+184    	; 0x162 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	5a c0       	rjmp	.+180    	; 0x162 <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	58 c0       	rjmp	.+176    	; 0x162 <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	56 c0       	rjmp	.+172    	; 0x162 <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	54 c0       	rjmp	.+168    	; 0x162 <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	52 c0       	rjmp	.+164    	; 0x162 <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	50 c0       	rjmp	.+160    	; 0x162 <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	4e c0       	rjmp	.+156    	; 0x162 <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	4c c0       	rjmp	.+152    	; 0x162 <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	4a c0       	rjmp	.+148    	; 0x162 <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	48 c0       	rjmp	.+144    	; 0x162 <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	46 c0       	rjmp	.+140    	; 0x162 <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	44 c0       	rjmp	.+136    	; 0x162 <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	42 c0       	rjmp	.+132    	; 0x162 <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	40 c0       	rjmp	.+128    	; 0x162 <__bad_interrupt>
+  e2:	00 00       	nop
+  e4:	3e c0       	rjmp	.+124    	; 0x162 <__bad_interrupt>
+  e6:	00 00       	nop
+  e8:	3c c0       	rjmp	.+120    	; 0x162 <__bad_interrupt>
+  ea:	00 00       	nop
+  ec:	3a c0       	rjmp	.+116    	; 0x162 <__bad_interrupt>
+  ee:	00 00       	nop
+  f0:	38 c0       	rjmp	.+112    	; 0x162 <__bad_interrupt>
+  f2:	00 00       	nop
+  f4:	36 c0       	rjmp	.+108    	; 0x162 <__bad_interrupt>
+  f6:	00 00       	nop
+  f8:	34 c0       	rjmp	.+104    	; 0x162 <__bad_interrupt>
+  fa:	00 00       	nop
+  fc:	32 c0       	rjmp	.+100    	; 0x162 <__bad_interrupt>
+  fe:	00 00       	nop
+ 100:	30 c0       	rjmp	.+96     	; 0x162 <__bad_interrupt>
+ 102:	00 00       	nop
+ 104:	2e c0       	rjmp	.+92     	; 0x162 <__bad_interrupt>
+ 106:	00 00       	nop
+ 108:	2c c0       	rjmp	.+88     	; 0x162 <__bad_interrupt>
+ 10a:	00 00       	nop
+ 10c:	2a c0       	rjmp	.+84     	; 0x162 <__bad_interrupt>
+ 10e:	00 00       	nop
+ 110:	28 c0       	rjmp	.+80     	; 0x162 <__bad_interrupt>
+ 112:	00 00       	nop
+ 114:	26 c0       	rjmp	.+76     	; 0x162 <__bad_interrupt>
+ 116:	00 00       	nop
+ 118:	24 c0       	rjmp	.+72     	; 0x162 <__bad_interrupt>
+ 11a:	00 00       	nop
+ 11c:	22 c0       	rjmp	.+68     	; 0x162 <__bad_interrupt>
+ 11e:	00 00       	nop
+ 120:	20 c0       	rjmp	.+64     	; 0x162 <__bad_interrupt>
+ 122:	00 00       	nop
+ 124:	1e c0       	rjmp	.+60     	; 0x162 <__bad_interrupt>
+ 126:	00 00       	nop
+ 128:	1c c0       	rjmp	.+56     	; 0x162 <__bad_interrupt>
+ 12a:	00 00       	nop
+ 12c:	1a c0       	rjmp	.+52     	; 0x162 <__bad_interrupt>
+ 12e:	00 00       	nop
+ 130:	18 c0       	rjmp	.+48     	; 0x162 <__bad_interrupt>
+	...
+
+00000134 <__ctors_end>:
+ 134:	11 24       	eor	r1, r1
+ 136:	1f be       	out	0x3f, r1	; 63
+ 138:	cf ef       	ldi	r28, 0xFF	; 255
+ 13a:	d1 e8       	ldi	r29, 0x81	; 129
+ 13c:	de bf       	out	0x3e, r29	; 62
+ 13e:	cd bf       	out	0x3d, r28	; 61
+ 140:	00 e0       	ldi	r16, 0x00	; 0
+ 142:	0c bf       	out	0x3c, r16	; 60
+
+00000144 <__do_copy_data>:
+ 144:	12 e0       	ldi	r17, 0x02	; 2
+ 146:	a0 e0       	ldi	r26, 0x00	; 0
+ 148:	b2 e0       	ldi	r27, 0x02	; 2
+ 14a:	ee e6       	ldi	r30, 0x6E	; 110
+ 14c:	f3 e0       	ldi	r31, 0x03	; 3
+ 14e:	00 e0       	ldi	r16, 0x00	; 0
+ 150:	0b bf       	out	0x3b, r16	; 59
+ 152:	02 c0       	rjmp	.+4      	; 0x158 <__do_copy_data+0x14>
+ 154:	07 90       	elpm	r0, Z+
+ 156:	0d 92       	st	X+, r0
+ 158:	ac 3d       	cpi	r26, 0xDC	; 220
+ 15a:	b1 07       	cpc	r27, r17
+ 15c:	d9 f7       	brne	.-10     	; 0x154 <__do_copy_data+0x10>
+ 15e:	a5 d0       	rcall	.+330    	; 0x2aa <main>
+ 160:	04 c1       	rjmp	.+520    	; 0x36a <_exit>
+
+00000162 <__bad_interrupt>:
+ 162:	4e cf       	rjmp	.-356    	; 0x0 <__vectors>
+
+00000164 <UART_GetChar>:
+uint8_t UART_GetChar(void);
+void LED_blink(void);
+
+//-------------------------------------------------------------------
+uint8_t UART_GetChar(void) {
+    while (!(UCSR1A & (1 << RXC1)));  // Wait for the reception of data
+ 164:	80 91 c8 00 	lds	r24, 0x00C8	; 0x8000c8 <__TEXT_REGION_LENGTH__+0x7c00c8>
+ 168:	88 23       	and	r24, r24
+ 16a:	e4 f7       	brge	.-8      	; 0x164 <UART_GetChar>
+    return UDR1;  // Return received character
+ 16c:	80 91 ce 00 	lds	r24, 0x00CE	; 0x8000ce <__TEXT_REGION_LENGTH__+0x7c00ce>
+}
+ 170:	08 95       	ret
+
+00000172 <LED_blink>:
+
+void LED_blink(void) {
+    DDRB |= (1 << LED_PIN);  // Set PD5 as output (correct the pin)
+ 172:	84 b1       	in	r24, 0x04	; 4
+ 174:	80 62       	ori	r24, 0x20	; 32
+ 176:	84 b9       	out	0x04, r24	; 4
+
+    for (int i = 0; i < 3; i++) {
+ 178:	20 e0       	ldi	r18, 0x00	; 0
+ 17a:	30 e0       	ldi	r19, 0x00	; 0
+ 17c:	1a c0       	rjmp	.+52     	; 0x1b2 <LED_blink+0x40>
+        PORTB |= (1 << LED_PIN);  // Turn LED on (set PD5 high)
+ 17e:	85 b1       	in	r24, 0x05	; 5
+ 180:	80 62       	ori	r24, 0x20	; 32
+ 182:	85 b9       	out	0x05, r24	; 5
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 184:	4f e9       	ldi	r20, 0x9F	; 159
+ 186:	86 e8       	ldi	r24, 0x86	; 134
+ 188:	91 e0       	ldi	r25, 0x01	; 1
+ 18a:	41 50       	subi	r20, 0x01	; 1
+ 18c:	80 40       	sbci	r24, 0x00	; 0
+ 18e:	90 40       	sbci	r25, 0x00	; 0
+ 190:	e1 f7       	brne	.-8      	; 0x18a <LED_blink+0x18>
+ 192:	00 c0       	rjmp	.+0      	; 0x194 <LED_blink+0x22>
+ 194:	00 00       	nop
+        _delay_ms(500);           // Wait 500 ms
+        PORTB &= ~(1 << LED_PIN); // Turn LED off (set PD5 low)
+ 196:	85 b1       	in	r24, 0x05	; 5
+ 198:	8f 7d       	andi	r24, 0xDF	; 223
+ 19a:	85 b9       	out	0x05, r24	; 5
+ 19c:	4f e9       	ldi	r20, 0x9F	; 159
+ 19e:	86 e8       	ldi	r24, 0x86	; 134
+ 1a0:	91 e0       	ldi	r25, 0x01	; 1
+ 1a2:	41 50       	subi	r20, 0x01	; 1
+ 1a4:	80 40       	sbci	r24, 0x00	; 0
+ 1a6:	90 40       	sbci	r25, 0x00	; 0
+ 1a8:	e1 f7       	brne	.-8      	; 0x1a2 <LED_blink+0x30>
+ 1aa:	00 c0       	rjmp	.+0      	; 0x1ac <LED_blink+0x3a>
+ 1ac:	00 00       	nop
+}
+
+void LED_blink(void) {
+    DDRB |= (1 << LED_PIN);  // Set PD5 as output (correct the pin)
+
+    for (int i = 0; i < 3; i++) {
+ 1ae:	2f 5f       	subi	r18, 0xFF	; 255
+ 1b0:	3f 4f       	sbci	r19, 0xFF	; 255
+ 1b2:	23 30       	cpi	r18, 0x03	; 3
+ 1b4:	31 05       	cpc	r19, r1
+ 1b6:	1c f3       	brlt	.-58     	; 0x17e <LED_blink+0xc>
+        _delay_ms(500);           // Wait 500 ms
+    }
+
+    // Optional: You can set the pin back to input if you want to disable the output
+    // cbi(DDRD, LED_PIN);  // Reset pin to input
+}
+ 1b8:	08 95       	ret
+
+000001ba <UART_init>:
+    UART_SendChar(receivedChar);   // Echo received character
+}
+
+void UART_init(uint16_t Baudrate) {
+    // Výpo?et hodnoty pro nastavení baudrate
+    uint16_t ubrr = F_CPU / 16 / Baudrate - 1;
+ 1ba:	9c 01       	movw	r18, r24
+ 1bc:	40 e0       	ldi	r20, 0x00	; 0
+ 1be:	50 e0       	ldi	r21, 0x00	; 0
+ 1c0:	60 e2       	ldi	r22, 0x20	; 32
+ 1c2:	71 ea       	ldi	r23, 0xA1	; 161
+ 1c4:	87 e0       	ldi	r24, 0x07	; 7
+ 1c6:	90 e0       	ldi	r25, 0x00	; 0
+ 1c8:	ae d0       	rcall	.+348    	; 0x326 <__udivmodsi4>
+ 1ca:	21 50       	subi	r18, 0x01	; 1
+ 1cc:	31 09       	sbc	r19, r1
+
+    // Nastavení Baud rate registru (UBRR0H a UBRR0L pro UART0)
+    UBRR1H = (uint8_t)(ubrr >> 8);  // Horní 8 bit?
+ 1ce:	30 93 cd 00 	sts	0x00CD, r19	; 0x8000cd <__TEXT_REGION_LENGTH__+0x7c00cd>
+    UBRR1L = (uint8_t)ubrr;         // Dolní 8 bit?
+ 1d2:	20 93 cc 00 	sts	0x00CC, r18	; 0x8000cc <__TEXT_REGION_LENGTH__+0x7c00cc>
+
+    // Nastavení parametr?: 8 datových bit?, 1 stop bit, bez parity
+    UCSR1C = (1 << UCSZ11) | (1 << UCSZ10);  // 8-bitový formát
+ 1d6:	86 e0       	ldi	r24, 0x06	; 6
+ 1d8:	80 93 ca 00 	sts	0x00CA, r24	; 0x8000ca <__TEXT_REGION_LENGTH__+0x7c00ca>
+    UCSR1B = (1 << RXEN1) | (1 << TXEN1);    // Povolení p?íjmu a vysílání
+ 1dc:	88 e1       	ldi	r24, 0x18	; 24
+ 1de:	80 93 c9 00 	sts	0x00C9, r24	; 0x8000c9 <__TEXT_REGION_LENGTH__+0x7c00c9>
+ 1e2:	08 95       	ret
+
+000001e4 <UART_SendChar>:
+}
+
+void UART_SendChar(uint8_t data) {
+    // ?ekáme, dokud není UART p?ipraven k odeslání dat (TXC bit)
+    while (!(UCSR1A & (1 << UDRE1)));  // ?ekání na prázdný registr
+ 1e4:	90 91 c8 00 	lds	r25, 0x00C8	; 0x8000c8 <__TEXT_REGION_LENGTH__+0x7c00c8>
+ 1e8:	95 ff       	sbrs	r25, 5
+ 1ea:	fc cf       	rjmp	.-8      	; 0x1e4 <UART_SendChar>
+    UDR1 = data;  // Odeslání dat
+ 1ec:	80 93 ce 00 	sts	0x00CE, r24	; 0x8000ce <__TEXT_REGION_LENGTH__+0x7c00ce>
+ 1f0:	08 95       	ret
+
+000001f2 <__vector_36>:
+
+    // Optional: You can set the pin back to input if you want to disable the output
+    // cbi(DDRD, LED_PIN);  // Reset pin to input
+}
+
+ISR(USART1_RX_vect) {
+ 1f2:	1f 92       	push	r1
+ 1f4:	0f 92       	push	r0
+ 1f6:	0f b6       	in	r0, 0x3f	; 63
+ 1f8:	0f 92       	push	r0
+ 1fa:	11 24       	eor	r1, r1
+ 1fc:	0b b6       	in	r0, 0x3b	; 59
+ 1fe:	0f 92       	push	r0
+ 200:	2f 93       	push	r18
+ 202:	3f 93       	push	r19
+ 204:	4f 93       	push	r20
+ 206:	5f 93       	push	r21
+ 208:	6f 93       	push	r22
+ 20a:	7f 93       	push	r23
+ 20c:	8f 93       	push	r24
+ 20e:	9f 93       	push	r25
+ 210:	af 93       	push	r26
+ 212:	bf 93       	push	r27
+ 214:	ef 93       	push	r30
+ 216:	ff 93       	push	r31
+    // Interrupt Service Routine for UART Receive
+    uint8_t receivedChar = UDR1;  // Read received character
+ 218:	80 91 ce 00 	lds	r24, 0x00CE	; 0x8000ce <__TEXT_REGION_LENGTH__+0x7c00ce>
+    UART_SendChar(receivedChar);   // Echo received character
+ 21c:	e3 df       	rcall	.-58     	; 0x1e4 <UART_SendChar>
+}
+ 21e:	ff 91       	pop	r31
+ 220:	ef 91       	pop	r30
+ 222:	bf 91       	pop	r27
+ 224:	af 91       	pop	r26
+ 226:	9f 91       	pop	r25
+ 228:	8f 91       	pop	r24
+ 22a:	7f 91       	pop	r23
+ 22c:	6f 91       	pop	r22
+ 22e:	5f 91       	pop	r21
+ 230:	4f 91       	pop	r20
+ 232:	3f 91       	pop	r19
+ 234:	2f 91       	pop	r18
+ 236:	0f 90       	pop	r0
+ 238:	0b be       	out	0x3b, r0	; 59
+ 23a:	0f 90       	pop	r0
+ 23c:	0f be       	out	0x3f, r0	; 63
+ 23e:	0f 90       	pop	r0
+ 240:	1f 90       	pop	r1
+ 242:	18 95       	reti
+
+00000244 <UART_SendString>:
+    // ?ekáme, dokud není UART p?ipraven k odeslání dat (TXC bit)
+    while (!(UCSR1A & (1 << UDRE1)));  // ?ekání na prázdný registr
+    UDR1 = data;  // Odeslání dat
+}
+
+void UART_SendString(char *text) {
+ 244:	cf 93       	push	r28
+ 246:	df 93       	push	r29
+ 248:	ec 01       	movw	r28, r24
+    while (*text != '\0') {  // Procházíme ?et?zec, dokud nenarazíme na '\0'
+ 24a:	02 c0       	rjmp	.+4      	; 0x250 <UART_SendString+0xc>
+        UART_SendChar(*text);  // Odeslání aktuálního znaku
+ 24c:	cb df       	rcall	.-106    	; 0x1e4 <UART_SendChar>
+        text++;  // Posun na další znak v ?et?zci
+ 24e:	21 96       	adiw	r28, 0x01	; 1
+    while (!(UCSR1A & (1 << UDRE1)));  // ?ekání na prázdný registr
+    UDR1 = data;  // Odeslání dat
+}
+
+void UART_SendString(char *text) {
+    while (*text != '\0') {  // Procházíme ?et?zec, dokud nenarazíme na '\0'
+ 250:	88 81       	ld	r24, Y
+ 252:	81 11       	cpse	r24, r1
+ 254:	fb cf       	rjmp	.-10     	; 0x24c <UART_SendString+0x8>
+        UART_SendChar(*text);  // Odeslání aktuálního znaku
+        text++;  // Posun na další znak v ?et?zci
+    }
+}
+ 256:	df 91       	pop	r29
+ 258:	cf 91       	pop	r28
+ 25a:	08 95       	ret
+
+0000025c <clear_screen>:
+
+// Function to clear the screen using ANSI escape sequence
+void clear_screen(void) {
+    UART_SendString("\x1b[2J");  // ANSI escape sequence for clearing screen
+ 25c:	80 e0       	ldi	r24, 0x00	; 0
+ 25e:	92 e0       	ldi	r25, 0x02	; 2
+ 260:	f1 df       	rcall	.-30     	; 0x244 <UART_SendString>
+    UART_SendString("\x1b[H");   // Move cursor to top-left corner
+ 262:	85 e0       	ldi	r24, 0x05	; 5
+ 264:	92 e0       	ldi	r25, 0x02	; 2
+ 266:	ee cf       	rjmp	.-36     	; 0x244 <UART_SendString>
+ 268:	08 95       	ret
+
+0000026a <set_text_color_pink>:
+}
+
+// Function to set text color to pink (magenta) using ANSI escape sequence
+void set_text_color_pink(void) {
+    UART_SendString("\x1b[35m");  // Set text color to magenta (pink)
+ 26a:	89 e0       	ldi	r24, 0x09	; 9
+ 26c:	92 e0       	ldi	r25, 0x02	; 2
+ 26e:	ea cf       	rjmp	.-44     	; 0x244 <UART_SendString>
+ 270:	08 95       	ret
+
+00000272 <reset_text_color>:
+}
+
+// Function to reset text color back to default using ANSI escape sequence
+void reset_text_color(void) {
+    UART_SendString("\x1b[0m");  // Reset to default text color
+ 272:	8f e0       	ldi	r24, 0x0F	; 15
+ 274:	92 e0       	ldi	r25, 0x02	; 2
+ 276:	e6 cf       	rjmp	.-52     	; 0x244 <UART_SendString>
+ 278:	08 95       	ret
+
+0000027a <print_menu>:
+}
+
+void print_menu(void) {
+    set_text_color_pink();  // Set text color to pink (magenta)
+ 27a:	f7 df       	rcall	.-18     	; 0x26a <set_text_color_pink>
+    UART_SendString("\n\r");
+ 27c:	81 e9       	ldi	r24, 0x91	; 145
+ 27e:	92 e0       	ldi	r25, 0x02	; 2
+ 280:	e1 df       	rcall	.-62     	; 0x244 <UART_SendString>
+    UART_SendString("MENU:\n\r");
+ 282:	84 e1       	ldi	r24, 0x14	; 20
+ 284:	92 e0       	ldi	r25, 0x02	; 2
+ 286:	de df       	rcall	.-68     	; 0x244 <UART_SendString>
+    UART_SendString("0. Exit\n\r");
+ 288:	8c e1       	ldi	r24, 0x1C	; 28
+ 28a:	92 e0       	ldi	r25, 0x02	; 2
+ 28c:	db df       	rcall	.-74     	; 0x244 <UART_SendString>
+    UART_SendString("1. Print lowercase alphabet\n\r");
+ 28e:	86 e2       	ldi	r24, 0x26	; 38
+ 290:	92 e0       	ldi	r25, 0x02	; 2
+ 292:	d8 df       	rcall	.-80     	; 0x244 <UART_SendString>
+    UART_SendString("2. Print uppercase alphabet\n\r");
+ 294:	84 e4       	ldi	r24, 0x44	; 68
+ 296:	92 e0       	ldi	r25, 0x02	; 2
+ 298:	d5 df       	rcall	.-86     	; 0x244 <UART_SendString>
+    UART_SendString("3. Blink LED 3 times\n\r");
+ 29a:	82 e6       	ldi	r24, 0x62	; 98
+ 29c:	92 e0       	ldi	r25, 0x02	; 2
+ 29e:	d2 df       	rcall	.-92     	; 0x244 <UART_SendString>
+    UART_SendString("Choose an option (0-3): \n\r");
+ 2a0:	89 e7       	ldi	r24, 0x79	; 121
+ 2a2:	92 e0       	ldi	r25, 0x02	; 2
+ 2a4:	cf df       	rcall	.-98     	; 0x244 <UART_SendString>
+ 2a6:	e5 cf       	rjmp	.-54     	; 0x272 <reset_text_color>
+    reset_text_color();  // Reset text color to default
+ 2a8:	08 95       	ret
+
+000002aa <main>:
+ 2aa:	cf 93       	push	r28
+ 2ac:	80 e0       	ldi	r24, 0x00	; 0
+}
+
+int main(void) {
+    UART_init(38400);  // Initialize UART with baud rate 38400
+ 2ae:	96 e9       	ldi	r25, 0x96	; 150
+ 2b0:	84 df       	rcall	.-248    	; 0x1ba <UART_init>
+    clear_screen();  // Clear the screen initially
+ 2b2:	d4 df       	rcall	.-88     	; 0x25c <clear_screen>
+    print_menu();  // Display the menu
+ 2b4:	e2 df       	rcall	.-60     	; 0x27a <print_menu>
+ 2b6:	56 df       	rcall	.-340    	; 0x164 <UART_GetChar>
+
+    while (1) {
+        uint8_t userInput = UART_GetChar();  // Get user input
+ 2b8:	80 33       	cpi	r24, 0x30	; 48
+ 2ba:	61 f1       	breq	.+88     	; 0x314 <main+0x6a>
+
+        // Respond based on input
+        if (userInput == '0') {
+ 2bc:	81 33       	cpi	r24, 0x31	; 49
+            // Exit the program
+            set_text_color_pink();  // Set text color to pink
+            UART_SendString("Exiting program...\n");
+            reset_text_color();  // Reset to default color
+            break;
+        } else if (userInput == '1') {
+ 2be:	71 f4       	brne	.+28     	; 0x2dc <main+0x32>
+ 2c0:	cd df       	rcall	.-102    	; 0x25c <clear_screen>
+            // Print lowercase alphabet
+            clear_screen();  // Clear the screen before printing
+ 2c2:	d3 df       	rcall	.-90     	; 0x26a <set_text_color_pink>
+            set_text_color_pink();  // Set text color to pink
+ 2c4:	c1 e6       	ldi	r28, 0x61	; 97
+ 2c6:	03 c0       	rjmp	.+6      	; 0x2ce <main+0x24>
+            for (char ch = 'a'; ch <= 'z'; ch++) {
+ 2c8:	8c 2f       	mov	r24, r28
+ 2ca:	8c df       	rcall	.-232    	; 0x1e4 <UART_SendChar>
+                UART_SendChar(ch);
+ 2cc:	cf 5f       	subi	r28, 0xFF	; 255
+ 2ce:	cb 37       	cpi	r28, 0x7B	; 123
+            break;
+        } else if (userInput == '1') {
+            // Print lowercase alphabet
+            clear_screen();  // Clear the screen before printing
+            set_text_color_pink();  // Set text color to pink
+            for (char ch = 'a'; ch <= 'z'; ch++) {
+ 2d0:	d8 f3       	brcs	.-10     	; 0x2c8 <main+0x1e>
+ 2d2:	86 ea       	ldi	r24, 0xA6	; 166
+ 2d4:	92 e0       	ldi	r25, 0x02	; 2
+                UART_SendChar(ch);
+            }
+            UART_SendString("\n");
+ 2d6:	b6 df       	rcall	.-148    	; 0x244 <UART_SendString>
+ 2d8:	cc df       	rcall	.-104    	; 0x272 <reset_text_color>
+            reset_text_color();  // Reset text color to default
+ 2da:	1a c0       	rjmp	.+52     	; 0x310 <main+0x66>
+ 2dc:	82 33       	cpi	r24, 0x32	; 50
+        } else if (userInput == '2') {
+ 2de:	71 f4       	brne	.+28     	; 0x2fc <main+0x52>
+ 2e0:	bd df       	rcall	.-134    	; 0x25c <clear_screen>
+            // Print uppercase alphabet
+            clear_screen();  // Clear the screen before printing
+ 2e2:	c3 df       	rcall	.-122    	; 0x26a <set_text_color_pink>
+ 2e4:	c1 e4       	ldi	r28, 0x41	; 65
+            set_text_color_pink();  // Set text color to pink
+ 2e6:	03 c0       	rjmp	.+6      	; 0x2ee <main+0x44>
+            for (char ch = 'A'; ch <= 'Z'; ch++) {
+ 2e8:	8c 2f       	mov	r24, r28
+ 2ea:	7c df       	rcall	.-264    	; 0x1e4 <UART_SendChar>
+                UART_SendChar(ch);
+ 2ec:	cf 5f       	subi	r28, 0xFF	; 255
+ 2ee:	cb 35       	cpi	r28, 0x5B	; 91
+            reset_text_color();  // Reset text color to default
+        } else if (userInput == '2') {
+            // Print uppercase alphabet
+            clear_screen();  // Clear the screen before printing
+            set_text_color_pink();  // Set text color to pink
+            for (char ch = 'A'; ch <= 'Z'; ch++) {
+ 2f0:	d8 f3       	brcs	.-10     	; 0x2e8 <main+0x3e>
+ 2f2:	86 ea       	ldi	r24, 0xA6	; 166
+                UART_SendChar(ch);
+            }
+            UART_SendString("\n");
+ 2f4:	92 e0       	ldi	r25, 0x02	; 2
+ 2f6:	a6 df       	rcall	.-180    	; 0x244 <UART_SendString>
+            reset_text_color();  // Reset text color to default
+ 2f8:	bc df       	rcall	.-136    	; 0x272 <reset_text_color>
+ 2fa:	0a c0       	rjmp	.+20     	; 0x310 <main+0x66>
+        } else if (userInput == '3') {
+ 2fc:	83 33       	cpi	r24, 0x33	; 51
+            // Blink LED 3 times
+            clear_screen();  // Clear the screen before blinking LED
+ 2fe:	19 f4       	brne	.+6      	; 0x306 <main+0x5c>
+            LED_blink();
+ 300:	ad df       	rcall	.-166    	; 0x25c <clear_screen>
+ 302:	37 df       	rcall	.-402    	; 0x172 <LED_blink>
+ 304:	05 c0       	rjmp	.+10     	; 0x310 <main+0x66>
+        } else {
+            // Invalid input
+            set_text_color_pink();  // Set text color to pink
+ 306:	b1 df       	rcall	.-158    	; 0x26a <set_text_color_pink>
+ 308:	88 ea       	ldi	r24, 0xA8	; 168
+            UART_SendString("Invalid choice. Please enter a value between 0-3.\n");
+ 30a:	92 e0       	ldi	r25, 0x02	; 2
+ 30c:	9b df       	rcall	.-202    	; 0x244 <UART_SendString>
+ 30e:	b1 df       	rcall	.-158    	; 0x272 <reset_text_color>
+ 310:	b4 df       	rcall	.-152    	; 0x27a <print_menu>
+            reset_text_color();  // Reset text color to default
+ 312:	d1 cf       	rjmp	.-94     	; 0x2b6 <main+0xc>
+ 314:	aa df       	rcall	.-172    	; 0x26a <set_text_color_pink>
+        }
+
+        // After each action, display the menu again and wait for user input
+        print_menu();
+ 316:	84 e9       	ldi	r24, 0x94	; 148
+ 318:	92 e0       	ldi	r25, 0x02	; 2
+    }
+ 31a:	94 df       	rcall	.-216    	; 0x244 <UART_SendString>
+        uint8_t userInput = UART_GetChar();  // Get user input
+
+        // Respond based on input
+        if (userInput == '0') {
+            // Exit the program
+            set_text_color_pink();  // Set text color to pink
+ 31c:	aa df       	rcall	.-172    	; 0x272 <reset_text_color>
+ 31e:	80 e0       	ldi	r24, 0x00	; 0
+            UART_SendString("Exiting program...\n");
+ 320:	90 e0       	ldi	r25, 0x00	; 0
+ 322:	cf 91       	pop	r28
+ 324:	08 95       	ret
+
+00000326 <__udivmodsi4>:
+ 326:	a1 e2       	ldi	r26, 0x21	; 33
+            reset_text_color();  // Reset to default color
+ 328:	1a 2e       	mov	r1, r26
+ 32a:	aa 1b       	sub	r26, r26
+        // After each action, display the menu again and wait for user input
+        print_menu();
+    }
+
+    return 0;
+}
+ 32c:	bb 1b       	sub	r27, r27
+ 32e:	fd 01       	movw	r30, r26
+ 330:	0d c0       	rjmp	.+26     	; 0x34c <__udivmodsi4_ep>
+
+00000332 <__udivmodsi4_loop>:
+ 332:	aa 1f       	adc	r26, r26
+ 334:	bb 1f       	adc	r27, r27
+ 336:	ee 1f       	adc	r30, r30
+ 338:	ff 1f       	adc	r31, r31
+ 33a:	a2 17       	cp	r26, r18
+ 33c:	b3 07       	cpc	r27, r19
+ 33e:	e4 07       	cpc	r30, r20
+ 340:	f5 07       	cpc	r31, r21
+ 342:	20 f0       	brcs	.+8      	; 0x34c <__udivmodsi4_ep>
+ 344:	a2 1b       	sub	r26, r18
+ 346:	b3 0b       	sbc	r27, r19
+ 348:	e4 0b       	sbc	r30, r20
+ 34a:	f5 0b       	sbc	r31, r21
+
+0000034c <__udivmodsi4_ep>:
+ 34c:	66 1f       	adc	r22, r22
+ 34e:	77 1f       	adc	r23, r23
+ 350:	88 1f       	adc	r24, r24
+ 352:	99 1f       	adc	r25, r25
+ 354:	1a 94       	dec	r1
+ 356:	69 f7       	brne	.-38     	; 0x332 <__udivmodsi4_loop>
+ 358:	60 95       	com	r22
+ 35a:	70 95       	com	r23
+ 35c:	80 95       	com	r24
+ 35e:	90 95       	com	r25
+ 360:	9b 01       	movw	r18, r22
+ 362:	ac 01       	movw	r20, r24
+ 364:	bd 01       	movw	r22, r26
+ 366:	cf 01       	movw	r24, r30
+ 368:	08 95       	ret
+
+0000036a <_exit>:
+ 36a:	f8 94       	cli
+
+0000036c <__stop_program>:
+ 36c:	ff cf       	rjmp	.-2      	; 0x36c <__stop_program>
